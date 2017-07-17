@@ -1,10 +1,13 @@
 {
   "name": "eslint-config-unicorn",
   "description": "An eslint configuration",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
-  "keywords": ["eslint", "eslintconfig"],
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "homepage": "https://github.com/Hilzu/eslint-config-unicorn",
   "repository": {
     "type": "git",
