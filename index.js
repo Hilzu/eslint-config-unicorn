@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: ["prettier", "node", "react"],
   rules: {
+    "array-callback-return": "error",
     eqeqeq: [
       "error",
       "always",
@@ -22,13 +23,27 @@ module.exports = {
         null: "ignore",
       },
     ],
+    "for-direction": "error",
+    "getter-return": "error",
+    "guard-for-in": "error",
+    "handle-callback-err": "error",
+    "no-await-in-loop": "error",
+    "no-buffer-constructor": "error",
     "no-console": "warn",
+    "no-duplicate-imports": "error",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-invalid-this": "error",
+    "no-path-concat": "error",
+    "no-script-url": "error",
+    "no-sync": "error",
     "no-unused-vars": [
       "error",
       {
         args: "none",
       },
     ],
+    "no-useless-computed-key": "error",
     "no-var": "error",
     "node/no-unsupported-features": [
       "error",
@@ -36,7 +51,10 @@ module.exports = {
         ignores: ["modules"],
       },
     ],
+    "prefer-arrow-callback": "error",
     "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
     "prettier/prettier": [
       "error",
       {
