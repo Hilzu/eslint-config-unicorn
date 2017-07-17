@@ -1,12 +1,16 @@
 {
   "name": "eslint-config-unicorn",
+  "description": "An eslint configuration",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
+  "keywords": ["eslint", "eslintconfig"],
+  "homepage": "https://github.com/Hilzu/eslint-config-unicorn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hilzu/eslint-config-unicorn.git"
+  },
+  "bugs": "https://github.com/Hilzu/eslint-config-unicorn/issues",
   "peerDependencies": {
     "eslint": "^4.2.0",
     "eslint-plugin-node": "^5.1.0",
