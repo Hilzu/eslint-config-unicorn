@@ -1,19 +1,19 @@
 module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
   extends: [
     "eslint:recommended",
     "plugin:node/recommended",
     "plugin:react/recommended",
   ],
-  plugins: ["prettier", "node", "react"],
-  env: {
-    node: true,
-    browser: true,
-    es6: true,
-  },
   parserOptions: {
-    sourceType: "module",
     ecmaVersion: 2017,
+    sourceType: "module",
   },
+  plugins: ["prettier", "node", "react"],
   rules: {
     eqeqeq: [
       "error",
@@ -30,22 +30,22 @@ module.exports = {
       },
     ],
     "no-var": "error",
-    "prefer-const": "error",
-    "prettier/prettier": [
-      "error",
-      {
-        singleQuote: true,
-        semi: false,
-      },
-    ],
-    "unicode-bom": "error",
-    "react/prop-types": "off",
-    "react/display-name": "off",
     "node/no-unsupported-features": [
       "error",
       {
         ignores: ["modules"],
       },
     ],
+    "prefer-const": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        semi: false,
+        singleQuote: true,
+      },
+    ],
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "unicode-bom": "error",
   },
 };
