@@ -2,32 +2,32 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:node/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
   ],
   plugins: ["prettier", "node", "react"],
   env: {
     node: true,
     browser: true,
-    es6: true
+    es6: true,
   },
   parserOptions: {
     sourceType: "module",
-    ecmaVersion: 2017
+    ecmaVersion: 2017,
   },
   rules: {
     eqeqeq: [
       "error",
       "always",
       {
-        null: "ignore"
-      }
+        null: "ignore",
+      },
     ],
     "no-console": "warn",
     "no-unused-vars": [
       "error",
       {
-        args: "none"
-      }
+        args: "none",
+      },
     ],
     "no-var": "error",
     "prefer-const": "error",
@@ -35,8 +35,8 @@ module.exports = {
       "error",
       {
         singleQuote: true,
-        semi: false
-      }
+        semi: false,
+      },
     ],
     "unicode-bom": "error",
     "react/prop-types": "off",
@@ -44,8 +44,8 @@ module.exports = {
     "node/no-unsupported-features": [
       "error",
       {
-        ignores: ["modules"]
-      }
-    ]
-  }
+        ignores: ["modules"],
+      },
+    ],
+  },
 };
