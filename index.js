@@ -16,7 +16,8 @@ module.exports = {
   plugins: ["prettier", "node", "react"],
   rules: {
     "array-callback-return": "error",
-    eqeqeq: [
+    "curly": "error",
+    "eqeqeq": [
       "error",
       "always",
       {
@@ -43,6 +44,7 @@ module.exports = {
         args: "none",
       },
     ],
+    "no-use-before-define": "error",
     "no-useless-computed-key": "error",
     "no-var": "error",
     "node/no-unsupported-features": [
