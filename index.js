@@ -41,12 +41,7 @@ module.exports = {
     "no-path-concat": "error",
     "no-script-url": "error",
     "no-sync": "error",
-    "no-unused-vars": [
-      "error",
-      {
-        args: "none",
-      },
-    ],
+    "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "no-use-before-define": "error",
     "no-useless-computed-key": "error",
     "no-var": "error",
