@@ -19,8 +19,8 @@ module.exports = {
   plugins: ["prettier", "node", "react"],
   rules: {
     "array-callback-return": "error",
-    "curly": "error",
-    "eqeqeq": [
+    curly: "error",
+    eqeqeq: [
       "error",
       "always",
       {

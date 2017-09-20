@@ -4,10 +4,7 @@
   "version": "0.3.1",
   "main": "index.js",
   "license": "MIT",
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
+  "keywords": ["eslint", "eslintconfig"],
   "homepage": "https://github.com/Hilzu/eslint-config-unicorn",
   "repository": {
     "type": "git",
@@ -15,6 +12,7 @@
   },
   "bugs": "https://github.com/Hilzu/eslint-config-unicorn/issues",
   "scripts": {
+    "precommit": "lint-staged",
     "test": "eslint index.js"
   },
   "peerDependencies": {
@@ -25,7 +23,10 @@
     "prettier": "^1.5.3"
   },
   "devDependencies": {
-    "eslint": "^4.2.0"
+    "eslint": "^4.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "prettier": "^1.7.0"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -35,5 +36,14 @@
     "rules": {
       "sort-keys": "error"
     }
+  },
+  "lint-staged": {
+    "*.{js,json}": ["prettier --write", "git add"]
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
   }
 }
