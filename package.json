@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-unicorn",
   "description": "An eslint configuration",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "main": "index.js",
   "license": "MIT",
   "keywords": ["eslint", "eslintconfig"],
