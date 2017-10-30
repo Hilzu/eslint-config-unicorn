@@ -56,13 +56,7 @@ module.exports = {
     "prefer-const": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
-    "prettier/prettier": [
-      "error",
-      {
-        semi: false,
-        singleQuote: true,
-      },
-    ],
+    "prettier/prettier": "error",
     "react/display-name": "off",
     "react/prop-types": "off",
     "unicode-bom": "error",
