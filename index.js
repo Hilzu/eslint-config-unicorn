@@ -1,3 +1,5 @@
+var restrictedGlobals = require("eslint-restricted-globals");
+
 module.exports = {
   env: {
     browser: true,
@@ -43,6 +45,7 @@ module.exports = {
     "no-invalid-this": "error",
     "no-labels": "error",
     "no-path-concat": "error",
+    "no-restricted-globals": ["error"].concat(restrictedGlobals),
     "no-script-url": "error",
     "no-sync": "error",
     "no-throw-literal": "error",
